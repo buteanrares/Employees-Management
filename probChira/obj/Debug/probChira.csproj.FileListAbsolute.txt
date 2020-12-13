@@ -7,3 +7,8 @@ C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.exe
 C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.pdb
 C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.exe
 C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.pdb
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.AddCompanyForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.AddEmployeeForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.CompaniesTableForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.EmployeesTableForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.MainForm.resources

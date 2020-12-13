@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace probChira.Domain
 {
-    class Employee
+    public class Employee
     {
         public int ID { get; set; }
 
