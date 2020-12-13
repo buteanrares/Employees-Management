@@ -12,7 +12,7 @@ using System.Windows.Forms.VisualStyles;
 
 namespace probChira
 {
-    class Repository
+    public class Repository
     {
         private String DatabasePath;
         private List<Employee> Employees = new List<Employee>();
@@ -23,7 +23,7 @@ namespace probChira
         }
 
         private void SaveEmployees() {
-            String employeesFilePath = @DatabasePath + "\\people.csv";
+            String employeesFilePath = @DatabasePath + "\\employees.csv";
             if (File.Exists(employeesFilePath)) {
                 File.WriteAllText(employeesFilePath, String.Empty);
                 using (StreamWriter sw = File.AppendText(employeesFilePath)) {
@@ -51,7 +51,7 @@ namespace probChira
             String CompaniesFilepath = @DatabasePath + "\\companies.csv";
             Employees.Clear();
             Companies.Clear();
-            if (File.Exists(DatabasePath)) {
+            if (File.Exists(EmployeesFilepath)) {
                 Employees.Clear();
                 foreach (var line in File.ReadAllLines(EmployeesFilepath)) {
                     String[] personData = line.Split(',');

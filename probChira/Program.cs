@@ -16,9 +16,11 @@ namespace probChira
             Repository repo = new Repository("C:\\Users\\butea\\source\\repos\\probChira\\probChira\\DB");
             repo.LoadData();
 
+            Service service = new Service(repo);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm(service));
         }
     }
 }

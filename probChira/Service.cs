@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace probChira
 {
-    class Service {
+    public class Service {
         Repository repo;
 
         public Service(Repository repo) {
@@ -62,6 +62,10 @@ namespace probChira
 
         public List<Company> GetCompanies() {
             return this.repo.GetCompanies();
+        }
+
+        public Company GetCompany(int id) {
+            return this.repo.ReadCompany(id);
         }
     }
 }

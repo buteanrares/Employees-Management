@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace probChira
+namespace probChira.UI
 {
-    public partial class Form1 : Form
+    public partial class AddEmployeeForm : Form
     {
-        public Form1() {
+        private Service service;
+        public AddEmployeeForm(Service service) {
+            this.service = service;
             InitializeComponent();
         }
+
     }
 }
