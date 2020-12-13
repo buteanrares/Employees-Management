@@ -32,7 +32,9 @@ namespace probChira.Domain
             dataDictionary.Add("CASS", 10 / 100 * Employee.GrossSalary);
             dataDictionary.Add("IV", 10 / 100 * Employee.GrossSalary);
             dataDictionary.Add("Total taxe", 45 / 100 * Employee.GrossSalary);
-            dataDictionary.Add("Rest de plata", 55 / 100 * Employee.GrossSalary);
+            dataDictionary.Add("Salariu net", 55 / 100 * Employee.GrossSalary);
+            dataDictionary.Add("Retineri", Employee.InstalmentsValue);
+            dataDictionary.Add("Rest de plata", 55 / 100 * Employee.GrossSalary - Employee.InstalmentsValue);
 
             return dataDictionary;
         }
