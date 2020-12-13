@@ -105,29 +105,37 @@ namespace probChira
 
         public void UpdateEmployee(int ID,Employee e) {
             int index = Employees.FindIndex(emp => emp.ID == e.ID);
-            if (index >= 0)
+            if (index >= 0) {
                 Employees[index] = e;
+                SaveEmployees();
+            }
             return;
         }
 
         public void UpdateCompany(int ID,Company c) {
             int index = Companies.FindIndex(cmp => cmp.ID == c.ID);
-            if (index >= 0)
+            if (index >= 0) {
                 Companies[index] = c;
+                SaveCompanies();
+            }
             return;
         }
 
         public void DeleteEmployee(int ID) {
             int index = Employees.FindIndex(emp => emp.ID == ID);
-            if (index >= 0)
+            if (index >= 0) {
                 Employees.RemoveAt(index);
+                SaveEmployees();
+            }
             return;
         }
 
         public void DeleteCompany(int ID) {
             int index = Companies.FindIndex(c => c.ID == ID);
-            if (index >= 0)
+            if (index >= 0) {
                 Companies.RemoveAt(index);
+                SaveCompanies();
+            }
             return;
         }
 
