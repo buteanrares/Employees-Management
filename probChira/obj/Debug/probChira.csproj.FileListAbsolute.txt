@@ -2,3 +2,8 @@ C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.csprojAssemb
 C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.Properties.Resources.resources
 C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.csproj.GenerateResource.cache
 C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.csproj.CoreCompileInputs.cache
+C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.exe.config
+C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.exe
+C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.pdb
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.exe
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.pdb

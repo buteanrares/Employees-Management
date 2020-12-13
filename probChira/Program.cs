@@ -13,6 +13,9 @@ namespace probChira
         /// </summary>
         [STAThread]
         static void Main() {
+            Repository repo = new Repository("C:\\Users\\butea\\source\\repos\\probChira\\probChira\\DB");
+            repo.LoadData();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

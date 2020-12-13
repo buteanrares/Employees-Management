@@ -37,6 +37,10 @@ namespace probChira.Domain
             this.InstalmentsValue = 0;
         }
 
+        public String ToCSV() {
+            return ID + "," + Name + "," + EmployerID + "," + Birthdate + "," + GrossSalary + "," + InstalmentsValue;
+        }
+
         private DateTime GetAge() {
             String[] BirthdateData = this.Birthdate.Split('/');
             int day = Convert.ToInt32(BirthdateData[0]);
