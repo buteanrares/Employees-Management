@@ -67,5 +67,14 @@ namespace probChira
         public Company GetCompany(int id) {
             return this.repo.ReadCompany(id);
         }
+
+        public Dictionary<String, double> GenerateFlyer(int ID) {
+            Flyer flyer = new Flyer(repo.ReadEmployee(ID), repo.ReadCompany(repo.ReadEmployee(ID).EmployerID));
+            return flyer.GenerateData();
+        }
+
+        public Employee GetEmployee(int ID) {
+            return repo.ReadEmployee(ID);
+        }
     }
 }

@@ -48,5 +48,10 @@ namespace probChira.UI
             int ID = Convert.ToInt32(employeesDGV.SelectedRows[0].Cells[0].Value);
             this.service.DeleteEmployee(ID);
         }
+
+        private void generateFlyer_Click(object sender, EventArgs e) {
+            var FlyerForm = new FlyerForm(service, this.employeesDGV.SelectedRows[0]);
+            FlyerForm.Show();
+        }
     }
 }

@@ -131,6 +131,7 @@ namespace probChira.UI
             this.generateFlyer.TabIndex = 3;
             this.generateFlyer.Text = "Genereaza fluturas salariu";
             this.generateFlyer.UseVisualStyleBackColor = true;
+            this.generateFlyer.Click += new System.EventHandler(this.generateFlyer_Click);
             // 
             // closeButton
             // 
