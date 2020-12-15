@@ -30,15 +30,15 @@ namespace probChira.UI
             this.companyLabel = new System.Windows.Forms.Label();
             this.birthdateLabel = new System.Windows.Forms.Label();
             this.grossSalaryLabel = new System.Windows.Forms.Label();
-            this.netSalaryLabel = new System.Windows.Forms.Label();
             this.instalmentsLabel = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.companyTextBox = new System.Windows.Forms.TextBox();
             this.birthdateTextBox = new System.Windows.Forms.TextBox();
             this.grossSalaryTextBox = new System.Windows.Forms.TextBox();
-            this.netSalaryTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.instalmentsValueTextBox = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
+            this.monthsForInstalments = new System.Windows.Forms.Label();
+            this.monthsForInstalmentsTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -77,19 +77,10 @@ namespace probChira.UI
             this.grossSalaryLabel.TabIndex = 3;
             this.grossSalaryLabel.Text = "Salariu brut:";
             // 
-            // netSalaryLabel
-            // 
-            this.netSalaryLabel.AutoSize = true;
-            this.netSalaryLabel.Location = new System.Drawing.Point(12, 167);
-            this.netSalaryLabel.Name = "netSalaryLabel";
-            this.netSalaryLabel.Size = new System.Drawing.Size(60, 13);
-            this.netSalaryLabel.TabIndex = 4;
-            this.netSalaryLabel.Text = "Salariu net:";
-            // 
             // instalmentsLabel
             // 
             this.instalmentsLabel.AutoSize = true;
-            this.instalmentsLabel.Location = new System.Drawing.Point(12, 203);
+            this.instalmentsLabel.Location = new System.Drawing.Point(12, 170);
             this.instalmentsLabel.Name = "instalmentsLabel";
             this.instalmentsLabel.Size = new System.Drawing.Size(65, 13);
             this.instalmentsLabel.TabIndex = 5;
@@ -123,19 +114,12 @@ namespace probChira.UI
             this.grossSalaryTextBox.Size = new System.Drawing.Size(100, 20);
             this.grossSalaryTextBox.TabIndex = 9;
             // 
-            // netSalaryTextBox
+            // instalmentsValueTextBox
             // 
-            this.netSalaryTextBox.Location = new System.Drawing.Point(107, 164);
-            this.netSalaryTextBox.Name = "netSalaryTextBox";
-            this.netSalaryTextBox.Size = new System.Drawing.Size(100, 20);
-            this.netSalaryTextBox.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(107, 200);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.instalmentsValueTextBox.Location = new System.Drawing.Point(107, 167);
+            this.instalmentsValueTextBox.Name = "instalmentsValueTextBox";
+            this.instalmentsValueTextBox.Size = new System.Drawing.Size(100, 20);
+            this.instalmentsValueTextBox.TabIndex = 11;
             // 
             // addButton
             // 
@@ -145,21 +129,38 @@ namespace probChira.UI
             this.addButton.TabIndex = 12;
             this.addButton.Text = "Adauga";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // monthsForInstalments
+            // 
+            this.monthsForInstalments.AutoSize = true;
+            this.monthsForInstalments.Location = new System.Drawing.Point(12, 201);
+            this.monthsForInstalments.Name = "monthsForInstalments";
+            this.monthsForInstalments.Size = new System.Drawing.Size(67, 13);
+            this.monthsForInstalments.TabIndex = 13;
+            this.monthsForInstalments.Text = "Durata (luni):";
+            // 
+            // monthsForInstalmentsTextBox
+            // 
+            this.monthsForInstalmentsTextBox.Location = new System.Drawing.Point(107, 198);
+            this.monthsForInstalmentsTextBox.Name = "monthsForInstalmentsTextBox";
+            this.monthsForInstalmentsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.monthsForInstalmentsTextBox.TabIndex = 14;
             // 
             // AddEmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 351);
+            this.Controls.Add(this.monthsForInstalmentsTextBox);
+            this.Controls.Add(this.monthsForInstalments);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.netSalaryTextBox);
+            this.Controls.Add(this.instalmentsValueTextBox);
             this.Controls.Add(this.grossSalaryTextBox);
             this.Controls.Add(this.birthdateTextBox);
             this.Controls.Add(this.companyTextBox);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.instalmentsLabel);
-            this.Controls.Add(this.netSalaryLabel);
             this.Controls.Add(this.grossSalaryLabel);
             this.Controls.Add(this.birthdateLabel);
             this.Controls.Add(this.companyLabel);
@@ -177,14 +178,14 @@ namespace probChira.UI
         private System.Windows.Forms.Label companyLabel;
         private System.Windows.Forms.Label birthdateLabel;
         private System.Windows.Forms.Label grossSalaryLabel;
-        private System.Windows.Forms.Label netSalaryLabel;
         private System.Windows.Forms.Label instalmentsLabel;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox companyTextBox;
         private System.Windows.Forms.TextBox birthdateTextBox;
         private System.Windows.Forms.TextBox grossSalaryTextBox;
-        private System.Windows.Forms.TextBox netSalaryTextBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox instalmentsValueTextBox;
         private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Label monthsForInstalments;
+        private System.Windows.Forms.TextBox monthsForInstalmentsTextBox;
     }
 }

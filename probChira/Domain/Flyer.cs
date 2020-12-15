@@ -22,19 +22,25 @@ namespace probChira.Domain
             this.Company = new Company();
         }
 
-        public Dictionary<String, double> GenerateData() {
+        public Dictionary<String, double> GenerateData(int extraHours, int extraMoney, int payDock) {
             Dictionary<String, double> dataDictionary = new Dictionary<String, double>();
 
+            int payPerHour = Employee.GrossSalary / 168;
+            int payPerExtraHour = 175 * payPerHour / 100;
+            int preTaxSalary = Employee.GrossSalary + payPerExtraHour * extraHours + extraMoney;
+
             dataDictionary.Add("Salariu de baza", Employee.GrossSalary);
-            dataDictionary.Add("Ore standard", Employee.GrossSalary / 168);
-            dataDictionary.Add("Salariu brut", Employee.GrossSalary);
-            dataDictionary.Add("CAS", 25 * Employee.GrossSalary / 100);
-            dataDictionary.Add("CASS", 10 * Employee.GrossSalary / 100);
-            dataDictionary.Add("IV", 10 * Employee.GrossSalary / 100);
-            dataDictionary.Add("Total taxe", 45  * Employee.GrossSalary / 100);
-            dataDictionary.Add("Salariu net", 55 * Employee.GrossSalary / 100);
-            dataDictionary.Add("Retineri", Employee.InstalmentsValue);
-            dataDictionary.Add("Rest de plata", (55 * Employee.GrossSalary) / 100 - Employee.InstalmentsValue);
+            dataDictionary.Add("Ore standard", payPerHour);
+            dataDictionary.Add("Ore suplimentare", payPerExtraHour);
+            dataDictionary.Add("Sporuri", extraMoney);
+            dataDictionary.Add("Salariu brut", preTaxSalary);
+            dataDictionary.Add("CAS", 25 * preTaxSalary / 100);
+            dataDictionary.Add("CASS", 10 * preTaxSalary / 100);
+            dataDictionary.Add("IV", 10 * preTaxSalary / 100);
+            dataDictionary.Add("Total taxe", 45  * preTaxSalary / 100);
+            dataDictionary.Add("Salariu net", 55 * preTaxSalary / 100);
+            dataDictionary.Add("Retineri", payDock);
+            dataDictionary.Add("Rest de plata", (55 * preTaxSalary) / 100 - payDock);
 
             return dataDictionary;
         }

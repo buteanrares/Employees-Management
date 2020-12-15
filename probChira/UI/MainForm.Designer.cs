@@ -78,7 +78,7 @@ namespace probChira
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(236, 259);
+            this.button5.Location = new System.Drawing.Point(236, 183);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(139, 23);
             this.button5.TabIndex = 7;
@@ -87,7 +87,7 @@ namespace probChira
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(236, 230);
+            this.button6.Location = new System.Drawing.Point(236, 154);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(139, 23);
             this.button6.TabIndex = 6;
@@ -96,7 +96,7 @@ namespace probChira
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 259);
+            this.button7.Location = new System.Drawing.Point(12, 183);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(139, 23);
             this.button7.TabIndex = 5;
@@ -105,7 +105,7 @@ namespace probChira
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(12, 230);
+            this.button8.Location = new System.Drawing.Point(12, 154);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(139, 23);
             this.button8.TabIndex = 4;

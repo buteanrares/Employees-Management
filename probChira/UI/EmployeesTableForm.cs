@@ -50,8 +50,12 @@ namespace probChira.UI
         }
 
         private void generateFlyer_Click(object sender, EventArgs e) {
-            var FlyerForm = new FlyerForm(service, this.employeesDGV.SelectedRows[0]);
-            FlyerForm.Show();
+            var GenerateFlyerForm = new GenerateFlyerForm(this.service, this.employeesDGV.SelectedRows[0]);
+            GenerateFlyerForm.Show();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e) {
+            this.Close();
         }
     }
 }

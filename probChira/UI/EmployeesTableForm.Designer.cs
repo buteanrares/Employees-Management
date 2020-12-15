@@ -141,6 +141,7 @@ namespace probChira.UI
             this.closeButton.TabIndex = 4;
             this.closeButton.Text = "Inchide";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // searchEmployeeLabel
             // 

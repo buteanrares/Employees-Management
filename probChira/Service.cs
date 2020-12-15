@@ -14,8 +14,8 @@ namespace probChira
             this.repo = repo;
         }
 
-        public void AddEmployee(String name, int employer, String birthdate, int grossSalary, int instalmentsValue) {
-            Employee e = new Employee(GenerateEmployeeID(), name, employer, birthdate, grossSalary, instalmentsValue);
+        public void AddEmployee(String name, int employer, String birthdate, int grossSalary, int instalmentsValue,int monthsForInstalments) {
+            Employee e = new Employee(GenerateEmployeeID(), name, employer, birthdate, grossSalary, instalmentsValue, monthsForInstalments);
             this.repo.Create(e);
         }
 
@@ -24,14 +24,14 @@ namespace probChira
             this.repo.Create(c);
         }
 
-        public void UpdateEmployee(int oldID, int id, String name, int employer, String birthdate, int grossSalary, int instalmentsValue) {
-            Employee e = new Employee(id, name, employer, birthdate, grossSalary, instalmentsValue);
-            this.repo.UpdateEmployee(oldID, e);
+        public void UpdateEmployee(int ID, String name, int employer, String birthdate, int grossSalary, int instalmentsValue,int monthsForInstalments) {
+            Employee e = new Employee(ID, name, employer, birthdate, grossSalary, instalmentsValue, monthsForInstalments);
+            this.repo.UpdateEmployee(ID, e);
         }
 
-        public void UpdateCompany(int oldID,int id, String name) {
-            Company c = new Company(id, name);
-            this.repo.UpdateCompany(oldID,c);
+        public void UpdateCompany(int ID, String name) {
+            Company c = new Company(ID, name);
+            this.repo.UpdateCompany(ID,c);
         }
 
         public void DeleteEmployee(int id) {
@@ -68,9 +68,13 @@ namespace probChira
             return this.repo.ReadCompany(id);
         }
 
-        public Dictionary<String, double> GenerateFlyer(int ID) {
+        public Company GetCompany(String name) {
+            return this.GetCompanies().Find(company => company.Name == name);
+        }
+
+        public Dictionary<String, double> GenerateFlyer(int ID,int extraHours, int extraMoney, int payDock) {
             Flyer flyer = new Flyer(repo.ReadEmployee(ID), repo.ReadCompany(repo.ReadEmployee(ID).EmployerID));
-            return flyer.GenerateData();
+            return flyer.GenerateData(extraHours,extraMoney,payDock);
         }
 
         public Employee GetEmployee(int ID) {
