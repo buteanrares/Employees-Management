@@ -86,6 +86,18 @@
     <Compile Include="UI\GenerateFlyerForm.Designer.cs">
       <DependentUpon>GenerateFlyerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\InstalmentsEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InstalmentsEmployees.Designer.cs">
+      <DependentUpon>InstalmentsEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LowSalaryEmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LowSalaryEmployeesForm.Designer.cs">
+      <DependentUpon>LowSalaryEmployeesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     </Compile>
     <Compile Include="UI\ModifyEmployeeForm.Designer.cs">
       <DependentUpon>ModifyEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RetiringEmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RetiringEmployeesForm.Designer.cs">
+      <DependentUpon>RetiringEmployeesForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +153,12 @@
     <EmbeddedResource Include="UI\GenerateFlyerForm.resx">
       <DependentUpon>GenerateFlyerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\InstalmentsEmployees.resx">
+      <DependentUpon>InstalmentsEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LowSalaryEmployeesForm.resx">
+      <DependentUpon>LowSalaryEmployeesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ModifyEmployeeForm.resx">
       <DependentUpon>ModifyEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RetiringEmployeesForm.resx">
+      <DependentUpon>RetiringEmployeesForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DB\companies.csv" />
     <None Include="DB\employees.csv" />

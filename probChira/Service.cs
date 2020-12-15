@@ -80,5 +80,17 @@ namespace probChira
         public Employee GetEmployee(int ID) {
             return repo.ReadEmployee(ID);
         }
+
+        public int getMeanSalary(int ID) {
+            int meanSalary = 0;
+            int count = 0;
+            foreach(Employee emp in repo.GetEmployees()) {
+                if (emp.EmployerID == ID) {
+                    meanSalary += emp.GrossSalary;
+                    count++;
+                }
+            }
+            return meanSalary / count;
+        }
     }
 }

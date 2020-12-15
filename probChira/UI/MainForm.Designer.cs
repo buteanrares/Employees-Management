@@ -30,10 +30,9 @@ namespace probChira
             this.showEmployeesButton = new System.Windows.Forms.Button();
             this.addCompanyButton = new System.Windows.Forms.Button();
             this.showCompaniesButton = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.monthlyTax = new System.Windows.Forms.Button();
+            this.canRetire = new System.Windows.Forms.Button();
+            this.lowSalaryButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addEmployeeButton
@@ -58,7 +57,7 @@ namespace probChira
             // 
             // addCompanyButton
             // 
-            this.addCompanyButton.Location = new System.Drawing.Point(236, 45);
+            this.addCompanyButton.Location = new System.Drawing.Point(213, 45);
             this.addCompanyButton.Name = "addCompanyButton";
             this.addCompanyButton.Size = new System.Drawing.Size(139, 23);
             this.addCompanyButton.TabIndex = 2;
@@ -68,7 +67,7 @@ namespace probChira
             // 
             // showCompaniesButton
             // 
-            this.showCompaniesButton.Location = new System.Drawing.Point(236, 74);
+            this.showCompaniesButton.Location = new System.Drawing.Point(213, 74);
             this.showCompaniesButton.Name = "showCompaniesButton";
             this.showCompaniesButton.Size = new System.Drawing.Size(139, 23);
             this.showCompaniesButton.TabIndex = 3;
@@ -76,51 +75,44 @@ namespace probChira
             this.showCompaniesButton.UseVisualStyleBackColor = true;
             this.showCompaniesButton.Click += new System.EventHandler(this.showCompaniesButton_Click);
             // 
-            // button5
+            // monthlyTax
             // 
-            this.button5.Location = new System.Drawing.Point(236, 183);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.monthlyTax.Location = new System.Drawing.Point(12, 266);
+            this.monthlyTax.Name = "monthlyTax";
+            this.monthlyTax.Size = new System.Drawing.Size(139, 50);
+            this.monthlyTax.TabIndex = 7;
+            this.monthlyTax.Text = "Tabel angajati cu rate lunare";
+            this.monthlyTax.UseVisualStyleBackColor = true;
+            this.monthlyTax.Click += new System.EventHandler(this.monthlyTax_Click);
             // 
-            // button6
+            // canRetire
             // 
-            this.button6.Location = new System.Drawing.Point(236, 154);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(139, 23);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.canRetire.Location = new System.Drawing.Point(12, 210);
+            this.canRetire.Name = "canRetire";
+            this.canRetire.Size = new System.Drawing.Size(139, 50);
+            this.canRetire.TabIndex = 5;
+            this.canRetire.Text = "Tabel angajati care se pot pensiona in anul curent";
+            this.canRetire.UseVisualStyleBackColor = true;
+            this.canRetire.Click += new System.EventHandler(this.canRetire_Click);
             // 
-            // button7
+            // lowSalaryButton
             // 
-            this.button7.Location = new System.Drawing.Point(12, 183);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(139, 23);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(12, 154);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(139, 23);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.lowSalaryButton.Location = new System.Drawing.Point(12, 154);
+            this.lowSalaryButton.Name = "lowSalaryButton";
+            this.lowSalaryButton.Size = new System.Drawing.Size(139, 50);
+            this.lowSalaryButton.TabIndex = 4;
+            this.lowSalaryButton.Text = "Tabel angajati cu salariu sub medie";
+            this.lowSalaryButton.UseVisualStyleBackColor = true;
+            this.lowSalaryButton.Click += new System.EventHandler(this.lowSalaryButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.monthlyTax);
+            this.Controls.Add(this.canRetire);
+            this.Controls.Add(this.lowSalaryButton);
             this.Controls.Add(this.showCompaniesButton);
             this.Controls.Add(this.addCompanyButton);
             this.Controls.Add(this.showEmployeesButton);
@@ -137,10 +129,9 @@ namespace probChira
         private System.Windows.Forms.Button showEmployeesButton;
         private System.Windows.Forms.Button addCompanyButton;
         private System.Windows.Forms.Button showCompaniesButton;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button monthlyTax;
+        private System.Windows.Forms.Button canRetire;
+        private System.Windows.Forms.Button lowSalaryButton;
     }
 }
 

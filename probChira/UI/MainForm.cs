@@ -40,6 +40,19 @@ namespace probChira
             CompaniesTableForm.Show();
         }
 
+        private void lowSalaryButton_Click(object sender, EventArgs e) {
+            var lowSalaryForm = new LowSalaryEmployeesForm(service);
+            lowSalaryForm.Show();
+        }
 
+        private void canRetire_Click(object sender, EventArgs e) {
+            var retiringEmployeesForm = new RetiringEmployeesForm(service);
+            retiringEmployeesForm.Show();
+        }
+
+        private void monthlyTax_Click(object sender, EventArgs e) {
+            var instalmentsEmployeesForm = new InstalmentsEmployeesForm(service);
+            instalmentsEmployeesForm.Show();
+        }
     }
 }
