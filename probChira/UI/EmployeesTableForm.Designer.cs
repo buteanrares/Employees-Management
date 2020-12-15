@@ -146,7 +146,7 @@ namespace probChira.UI
             // searchEmployeeLabel
             // 
             this.searchEmployeeLabel.AutoSize = true;
-            this.searchEmployeeLabel.Location = new System.Drawing.Point(12, 25);
+            this.searchEmployeeLabel.Location = new System.Drawing.Point(12, 36);
             this.searchEmployeeLabel.Name = "searchEmployeeLabel";
             this.searchEmployeeLabel.Size = new System.Drawing.Size(85, 13);
             this.searchEmployeeLabel.TabIndex = 5;
@@ -154,7 +154,7 @@ namespace probChira.UI
             // 
             // searchEmployeeTextbox
             // 
-            this.searchEmployeeTextbox.Location = new System.Drawing.Point(103, 22);
+            this.searchEmployeeTextbox.Location = new System.Drawing.Point(103, 33);
             this.searchEmployeeTextbox.Name = "searchEmployeeTextbox";
             this.searchEmployeeTextbox.Size = new System.Drawing.Size(100, 20);
             this.searchEmployeeTextbox.TabIndex = 6;
