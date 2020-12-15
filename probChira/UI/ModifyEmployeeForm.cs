@@ -20,5 +20,10 @@ namespace probChira.UI
             this.row = row;
             InitializeComponent();
         }
+
+        private void modifyButton_Click(object sender, EventArgs e) {
+            int companyID = this.service.GetCompany(companyTextBox.Text).ID;
+            this.service.UpdateEmployee(Convert.ToInt32(row.Cells[0].Value), nameTextBox.Text, companyID, birthdateTextBox.Text, Convert.ToInt32(grossSalaryTextBox.Text), Convert.ToInt32(instalmentsValueTextBox.Text), Convert.ToInt32(monthsForInstalments.Text));
+        }
     }
 }

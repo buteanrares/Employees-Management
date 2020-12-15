@@ -20,13 +20,16 @@ namespace probChira.Domain
 
         public int InstalmentsValue { get; set; }
 
-        public Employee(int id, String name, int employer, String birthdate, int grossSalary, int instalmentsValue) {
+        public int monthsForInstalments { get; set; }
+
+        public Employee(int id, String name, int employer, String birthdate, int grossSalary, int instalmentsValue,int monthsForInstalments) {
             this.ID = id;
             this.Name = name;
             this.EmployerID = employer;
             this.Birthdate = birthdate;
             this.GrossSalary = grossSalary;
             this.InstalmentsValue = instalmentsValue;
+            this.monthsForInstalments = monthsForInstalments;
         }
 
         public Employee() {
@@ -38,7 +41,7 @@ namespace probChira.Domain
         }
 
         public String ToCSV() {
-            return ID + "," + Name + "," + EmployerID + "," + Birthdate + "," + GrossSalary + "," + InstalmentsValue;
+            return ID + "," + Name + "," + EmployerID + "," + Birthdate + "," + GrossSalary + "," + InstalmentsValue + "," + monthsForInstalments;
         }
 
         private DateTime GetAge() {

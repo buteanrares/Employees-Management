@@ -61,8 +61,9 @@ namespace probChira
                     String bd = personData[3];
                     int gs = Convert.ToInt32(personData[4]);
                     int iv = Convert.ToInt32(personData[5]);
+                    int miv = Convert.ToInt32(personData[6]);
 
-                    Employee emp = new Employee(ID, name, empID, bd, gs, iv);
+                    Employee emp = new Employee(ID, name, empID, bd, gs, iv, miv);
                     Employees.Add(emp);
                 }
             }

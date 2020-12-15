@@ -15,38 +15,42 @@ namespace probChira.UI
     {
         private Service Service;
         private DataGridViewRow EmployeeRow;
+        private int extraHours;
+        private int extraMoney;
+        private int payDock;
+        private String month;
 
 
-        public FlyerForm(Service service,DataGridViewRow EmployeeRow) {
+        public FlyerForm(Service service, DataGridViewRow EmployeeRow, int extraHours, int extraMoney, int payDock, String month) {
             this.Service = service;
             this.EmployeeRow = EmployeeRow;
+            this.extraHours = extraHours;
+            this.extraMoney = extraMoney;
+            this.payDock = payDock;
+            this.month = month;
             InitializeComponent();
         }
 
         private void FlyerForm_Load(object sender, EventArgs e) {
             Employee employee = Service.GetEmployee(Convert.ToInt32(EmployeeRow.Cells[0].Value));
-            Dictionary<String, double> FlyerData = new Dictionary<String, double>(Service.GenerateFlyer(employee.ID));
+            Dictionary<String, double> FlyerData = new Dictionary<String, double>(Service.GenerateFlyer(employee.ID,extraHours,extraMoney,payDock));
             
             companyName.Text = Service.GetCompany(employee.EmployerID).Name;
-            employeeNamelabel.Text = "Nume salariat";
+            dateLabel.Text = month + " / 2020";
             employeeNameHolder.Text = employee.Name;
-            currencyLabel.Text = "Lei";
-            grossSalaryLabel.Text = "Salariu de baza";
             grossSalaryHolder.Text = Convert.ToString(FlyerData["Salariu de baza"]);
-            hoursLabel.Text = "Ore standard";
             hoursHolder.Text = "168 (" + Convert.ToString(FlyerData["Ore standard"]) + " lei/ora)";
-            grossSalaryLabel2.Text = "Salariu brut";
-            grossSalaryHolder2.Text = grossSalaryHolder.Text;
+            extraHoursHolder.Text = Convert.ToString(extraHours) + " (" + Convert.ToString(FlyerData["Ore suplimentare"]) + " lei/ora)";
+            extraMoneyHolder.Text = Convert.ToString(FlyerData["Sporuri"]);
+            grossSalaryHolder2.Text = Convert.ToString(FlyerData["Salariu brut"]);
             CASHolder.Text = Convert.ToString(FlyerData["CAS"]);
             CASSHolder.Text = Convert.ToString(FlyerData["CASS"]);
             IVHolder.Text = Convert.ToString(FlyerData["IV"]);
             TotalHolder.Text = Convert.ToString(FlyerData["Total taxe"]);
-            netSalaryLabel.Text = "Salariu net";
             netSalaryHolder.Text = Convert.ToString(FlyerData["Salariu net"]);
-            montlyTax.Text = "Retineri";
             monthlyTaxHolder.Text = Convert.ToString(FlyerData["Retineri"]);
-            CashLabel.Text = "Rest de plata";
             cashValueHolder.Text = Convert.ToString(FlyerData["Rest de plata"]);
         }
+
     }
 }

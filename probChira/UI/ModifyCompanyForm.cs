@@ -12,8 +12,18 @@ namespace probChira.UI
 {
     public partial class ModifyCompanyForm : Form
     {
-        public ModifyCompanyForm() {
+        private Service service;
+        private DataGridViewRow row;
+
+        public ModifyCompanyForm(Service service,DataGridViewRow row) {
+            this.row = row;
+            this.service = service;
             InitializeComponent();
+        }
+
+        private void modifyButton_Click(object sender, EventArgs e) {
+            int id = Convert.ToInt32(row.Cells[0].Value);
+            this.service.UpdateCompany(id, nameTextBox.Text);
         }
     }
 }

@@ -39,6 +39,7 @@ namespace probChira.UI
             this.addButton.TabIndex = 5;
             this.addButton.Text = "Adauga";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // nameTextBox
             // 
