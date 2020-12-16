@@ -109,7 +109,7 @@ namespace probChira
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 450);
+            this.ClientSize = new System.Drawing.Size(442, 450);
             this.Controls.Add(this.monthlyTax);
             this.Controls.Add(this.canRetire);
             this.Controls.Add(this.lowSalaryButton);
