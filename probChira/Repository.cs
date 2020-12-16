@@ -104,7 +104,7 @@ namespace probChira
             return new Company();
         }
 
-        public void UpdateEmployee(int ID,Employee e) {
+        public void UpdateEmployee(int ID, Employee e) {
             int index = Employees.FindIndex(emp => emp.ID == e.ID);
             if (index >= 0) {
                 Employees[index] = e;

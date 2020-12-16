@@ -17,17 +17,13 @@ namespace probChira.Domain
             this.Company = company;
         }
 
-        public Flyer() {
-            this.Employee = new Employee();
-            this.Company = new Company();
-        }
 
         public Dictionary<String, double> GenerateData(int extraHours, int extraMoney, int payDock) {
             Dictionary<String, double> dataDictionary = new Dictionary<String, double>();
 
-            int payPerHour = Employee.GrossSalary / 168;
-            int payPerExtraHour = 175 * payPerHour / 100;
-            int preTaxSalary = Employee.GrossSalary + payPerExtraHour * extraHours + extraMoney;
+            double payPerHour = Math.Round((double)Employee.GrossSalary/168,4);
+            double payPerExtraHour = Math.Round((double)175 * payPerHour / 100,4);
+            double preTaxSalary = Math.Round((double)Employee.GrossSalary + payPerExtraHour * extraHours + extraMoney,4);
 
             dataDictionary.Add("Salariu de baza", Employee.GrossSalary);
             dataDictionary.Add("Ore standard", payPerHour);

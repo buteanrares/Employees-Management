@@ -139,9 +139,9 @@ namespace probChira.UI
             // hoursHolder
             // 
             this.hoursHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoursHolder.Location = new System.Drawing.Point(413, 200);
+            this.hoursHolder.Location = new System.Drawing.Point(370, 200);
             this.hoursHolder.Name = "hoursHolder";
-            this.hoursHolder.Size = new System.Drawing.Size(150, 16);
+            this.hoursHolder.Size = new System.Drawing.Size(193, 16);
             this.hoursHolder.TabIndex = 8;
             this.hoursHolder.Text = "hoursHolder";
             this.hoursHolder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -309,9 +309,9 @@ namespace probChira.UI
             // extraHoursHolder
             // 
             this.extraHoursHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.extraHoursHolder.Location = new System.Drawing.Point(414, 230);
+            this.extraHoursHolder.Location = new System.Drawing.Point(371, 230);
             this.extraHoursHolder.Name = "extraHoursHolder";
-            this.extraHoursHolder.Size = new System.Drawing.Size(150, 16);
+            this.extraHoursHolder.Size = new System.Drawing.Size(193, 16);
             this.extraHoursHolder.TabIndex = 26;
             this.extraHoursHolder.Text = "extraHoursHolder";
             this.extraHoursHolder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -329,9 +329,9 @@ namespace probChira.UI
             // extraMoneyHolder
             // 
             this.extraMoneyHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.extraMoneyHolder.Location = new System.Drawing.Point(414, 260);
+            this.extraMoneyHolder.Location = new System.Drawing.Point(371, 260);
             this.extraMoneyHolder.Name = "extraMoneyHolder";
-            this.extraMoneyHolder.Size = new System.Drawing.Size(150, 16);
+            this.extraMoneyHolder.Size = new System.Drawing.Size(193, 16);
             this.extraMoneyHolder.TabIndex = 28;
             this.extraMoneyHolder.Text = "extraMoneyHolder";
             this.extraMoneyHolder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
