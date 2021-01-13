@@ -21,7 +21,7 @@ namespace probChira.UI
 
         private void LowSalaryEmployeesForm_Load(object sender, EventArgs e) {
             foreach(Employee employee in service.GetEmployees()) {
-                if (employee.GrossSalary <= this.service.getMeanSalary(employee.EmployerID)) {
+                if (employee.GrossSalary < this.service.getMeanSalary(employee.EmployerID)) {
                     LowSalaryEmployeesDGV_AddEmployee(employee);
                 }
             }
