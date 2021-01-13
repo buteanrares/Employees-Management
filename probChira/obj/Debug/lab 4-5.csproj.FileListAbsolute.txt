@@ -1,0 +1,21 @@
+C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.exe.config
+C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.exe
+C:\Users\butea\source\repos\probChira\probChira\bin\Debug\probChira.pdb
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\lab 4-5.csprojAssemblyReference.cache
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.Properties.Resources.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.AddCompanyForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.AddEmployeeForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.CompaniesTableForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.EmployeesTableForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.FlyerForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.GenerateFlyerForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.InstalmentsEmployeesForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.LowSalaryEmployeesForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.MainForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.ModifyCompanyForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.ModifyEmployeeForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.UI.RetiringEmployeesForm.resources
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\lab 4-5.csproj.GenerateResource.cache
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\lab 4-5.csproj.CoreCompileInputs.cache
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.exe
+C:\Users\butea\source\repos\probChira\probChira\obj\Debug\probChira.pdb
