@@ -52,7 +52,6 @@ namespace probChira
             Employees.Clear();
             Companies.Clear();
             if (File.Exists(EmployeesFilepath)) {
-                Employees.Clear();
                 foreach (var line in File.ReadAllLines(EmployeesFilepath)) {
                     String[] personData = line.Split(',');
                     int ID = Convert.ToInt32(personData[0]);
@@ -68,7 +67,6 @@ namespace probChira
                 }
             }
             if (File.Exists(CompaniesFilepath)) {
-                Companies.Clear();
                 foreach (var line in File.ReadAllLines(CompaniesFilepath)) {
                     String[] companyData = line.Split(',');
                     int id = Convert.ToInt32(companyData[0]);
