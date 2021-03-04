@@ -3,4 +3,4 @@ Employees management application
 - View employees by name, company, or salary
 - View underpaid or overpaid employees based on company wage mean
 - Generate a salary flier, with applied tax percentages and customizable penalties or bonuses
-- Intuitive, easy to use UI
+- Lightweight UI with intuitive, easy to use UIX
