@@ -1,4 +1,5 @@
-# Employees management application implemented in C#. Hire, pay with a generated salary flyer, fire or list employees and create companies. Stratified Architecture paradigm is followed along Object Oriented Programming.
+# Employees management application implemented in C#. 
+## Hire, pay with a generated salary flyer, fire or list employees and create companies. Stratified Architecture paradigm is followed along Object Oriented Programming.
 
 ## Current features
 - View, add, update or fire employees from a company
